@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?colorPrimary"
+    android:orientation="vertical"
+    android:padding="30dp"
+    >
+
+    <!-- Title  -->
+    <FrameLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ViewStub
+            android:id="@+id/viewstub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/view_common_dialog_title"
+            tools:visibility="visible"
+            />
+    </FrameLayout>
+    <!-- Content  -->
+    <FrameLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ViewStub
+            android:id="@+id/viewstub_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/view_common_dialog_content"
+            tools:visibility="visible"
+            />
+
+        <ViewStub
+            android:id="@+id/viewstub_content_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/view_common_dialog_content_list"
+            tools:visibility="visible"
+            />
+    </FrameLayout>
+    <!-- Button  -->
+    <FrameLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        >
+
+        <ViewStub
+            android:id="@+id/viewstub_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/view_common_dialog_buttons"
+            tools:visibility="visible"
+            />
+    </FrameLayout>
+
+</LinearLayout>
