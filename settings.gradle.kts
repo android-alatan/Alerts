@@ -32,6 +32,7 @@ include(
 include(
     ":compose-dialog",
     ":compose-dialog-api",
+    ":compose-dialog-assertion",
 )
 
 
